@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Norse';
+    src: url("fonts/Norse.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #000000;
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.page-header {
+    background-image: url(img/header-photo.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 50vh;
+    position: relative;
+}
+
+#dark-background {
+    top: 180px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    padding: 10px;
+}
+
+.page-header h1 {
+    font-size: 6em;
+    color: white;
+    font-family: "Norse", sans-serif;
+}
+
+#credit {
+    font-size: 13px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    top: auto;
+    color: white;
+    transform: translateX(-50%); /* Pull it back by half its own width to perfectly center it */
+}
+
+#credit a:link,
+#credit a:visited {
+    color: white;
+}
+
+#text-sidebar {
+    padding-left: 30px;
+    font-size: 25px;
+}
+
+#form-sidebar,
+#content-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    gap: 10px 40px;
+    justify-content: start;
+}
+
+label {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #000000b2;
+}
+
+input {
+    margin-left: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px; /* Limits the input length so they aren't massive */
+    padding: 8px;     /* Smaller padding keeps things tighter */
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
+input[type="password"]:user-invalid {
+    border: 1px solid red;
+}
+
+fieldset {
+    background-color: white;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    width: 100%;        
+    text-align: left;  
+    padding: 15px 30px;    /* Adds space above/below */
+    background: inherit; 
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#bottom-sidebar {
+    padding-left: 30px;
+}
+
+#bottom-sidebar button {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 30px;
+    background-color: #596D48;
+    border: 1px solid #596D48;
+    margin-bottom: 30px;
+    box-shadow: 0px 10px 14px -7px #596d48;
+	background-color:#596d48;
+	border-radius:4px;
+	display:inline-block;
+	cursor:pointer;
+	text-decoration:none;
+}
+
+#bottom-sidebar {
+    font-size: 17px;
+}
+
+#bottom-sidebar a:link,
+#bottom-sidebar a:visited {
+    color: #596D48;
+    text-decoration: none;
+}
