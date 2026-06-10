@@ -97,10 +97,6 @@ input {
     padding: 8px;     /* Smaller padding keeps things tighter */
 }
 
-input:valid {
-    border: 2px solid green;
-}
-
 input[type="password"]:user-invalid {
     border: 1px solid red;
 }
